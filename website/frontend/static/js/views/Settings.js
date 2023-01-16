@@ -9,9 +9,10 @@ export default class extends AbstractView {
     async getHtml() {
         return `
             <h1> Settings</h1>
-            <p>
-                Settings details.
-            </p>
+            <div class="settings-container" onload="checkMode()">
+                <p class="settings-label">Dark Mode:</p>
+                <i class="toggle fa-solid fa-toggle-on" id="onToggle" onClick="toggleOn()"></i>
+            </div>
             <p>
                 <a href="/" data-link>Back to Dashboard...</a>.
             </p>
