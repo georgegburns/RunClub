@@ -42,16 +42,20 @@ img{
 
 .settings-container{
     display: grid;
-    grid-template-columns:50% 50%;
-    grid-row: auto auto;
+    width: 90%;
+    grid-template-columns:100%;
+    gap: 10% 0;
+    grid-row: auto;
 }
 
 .settings-label{
-    text-align: end !important;
+    text-align: center;
+    width: 100%;
 }
 
-.toggle{
-    text-align: start !important;
+.fa-bars {
+    float: right;
+    margin: 10px 0;
 }
 
 .fa-toggle-on{
@@ -63,7 +67,7 @@ img{
     top: 70px;
     left: 0;
     height: 100%;
-    width: 50%;
+    width: 100%;
     background: #222222;
     z-index: 1;
 }
@@ -77,7 +81,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     background: #222222;
     z-index: 2;
@@ -97,7 +101,7 @@ img{
     width:80%;
     vertical-align: middle;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     color: white;
     font-family: 'Garamond';
 }
@@ -135,11 +139,10 @@ img{
 #app {
     line-height: 1.5;
     font-weight: 500;
-    height: 100vh;
+    margin: auto;
 }
 
 #app *{
-    width: 90%;
     text-align: center;
     margin: auto;
 }
@@ -160,9 +163,7 @@ i {
 
 img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 80%;
 }
 
 @media only screen and (min-width: 759px) {

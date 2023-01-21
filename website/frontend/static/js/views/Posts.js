@@ -12,6 +12,7 @@ export default class extends AbstractView {
             <p>
                 So maybe here goes some posts, comments on runs etc...
             </p>
+            <br>
             <p>
                 <a href="/" data-link>Back to Dashboard...</a>.
             </p>
